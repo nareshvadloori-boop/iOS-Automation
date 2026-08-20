@@ -1,0 +1,32 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run testNativeAlert from AlertsTest (iPhone 17 Pro Max)",
+      "type": "shell",
+      "command": "xcodebuild",
+      "args": [
+        "test",
+        "-scheme",
+        "Lebyy",
+        "-destination",
+        "platform=iOS Simulator,name=iPhone 17 Pro Max",
+        "-only-testing:NareshVUITests/AlertsTest/testNativeAlert"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "group": {
+        "kind": "test",
+        "isDefault": false
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "focus": false,
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
